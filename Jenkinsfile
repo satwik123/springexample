@@ -11,7 +11,7 @@ node('working') {
    stage('Build') {
       
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' clean deploy"
+         sh "'${mvnHome}/bin/mvn' -Pspring-deploy clean deploy"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
