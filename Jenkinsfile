@@ -1,4 +1,4 @@
-env.mvnHome = '/usr/share/maven3'
+env.mvnHome = '/opt/apache-maven-3.6.1/'
 node('working') {
    
    
