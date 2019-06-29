@@ -12,7 +12,7 @@
     <repository>
       <id>my-repo2</id>
       <name>public</name>
-      <url>http://18.217.12.194:8081/nexus/content/groups/public/</url>
+      <url>http://3.14.14.223:8081/nexus/content/groups/public/</url>
     </repository>
     <repository>
       <id>my-repo1</id>
