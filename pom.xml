@@ -42,12 +42,12 @@
     <repository>
       <id>spring-releases</id>
       <name>spring-releases</name>
-      <url>http://3.14.14.223:8081/nexus/content/repositories/spring-releases/</url>
+      <url>http://3.18.112.118:8081/nexus/content/repositories/spring-releases/</url>
     </repository>
     <snapshotRepository>
       <id>spring-snapshots</id>
       <name>spring-snapshots</name>
-      <url>http://3.14.14.223:8081/nexus/content/repositories/spring-snapshots/</url>
+      <url>http://3.18.112.118:8081/nexus/content/repositories/spring-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </profile>
