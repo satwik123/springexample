@@ -1,6 +1,7 @@
 steps:
-  - name: gcr.io/cloud-builders/mvn
-    args: ['install']	
+  - name: maven:3.6.0-jdk-11-slim
+    entrypoint: 'mvn'
+    args: ['install']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/mvn-build-cicd:$SHORT_SHA', '.']
 images: ['gcr.io/$PROJECT_ID/mvn-build-cicd:$SHORT_SHA']
