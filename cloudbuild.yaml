@@ -1,7 +1,7 @@
 steps:
   - name: maven:3.6.0-jdk-11-slim
     entrypoint: 'mvn'
-    args: ['install']
+    args: ['-Pspring-deploy','deploy']
   - name: gcr.io/cloud-builders/gsutil
     args: ['cp','target/SpringExample-2.0.3-SNAPSHOT.jar', 'gs://mvn-build-cicd']
   - name: 'gcr.io/cloud-builders/docker'
